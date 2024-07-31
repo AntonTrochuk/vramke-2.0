@@ -1,0 +1,33 @@
+.catalog {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.catalog-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.catalog-list-link {
+    text-decoration: none;
+}
+
+.catalog-item {
+    width: 280px;
+    height: 280px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px -8px rgba(0, 0, 0, .15);
+}
+
+.catalog-item-subtitle {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px ;
+    color: #022AF5;
+}
