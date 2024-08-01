@@ -1,0 +1,30 @@
+.consumables-slogan {
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    background-color: bisque;
+    background-image: url('../image/consumables/slogan-consumables.png');
+    position: relative;
+}
+
+.consumables-product {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.consumables-product-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.consumables-product-item {
+    width: 285px;
+    height: 450px;
+    background-color: #EAE9EE;
+    border-radius: 10px;
+}
