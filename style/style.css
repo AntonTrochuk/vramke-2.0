@@ -378,9 +378,37 @@ h3 {
     font-size: 25px;
 }
 
+
 /*footer*/
 
 .index-footer {
     min-height: 200px;
-    background-color: rgb(76,83,189);
+    background-color: white;
+    border-top: 3px solid #E2E6FE;
+}
+
+.footer-block {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.social-media {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-block-text-list {
+    margin-left: 5px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-block-text-link {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    color: black;
 }
