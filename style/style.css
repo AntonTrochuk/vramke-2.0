@@ -1,5 +1,9 @@
+
 body {
-    margin: 0 auto;
+
+	@media (min-width: 1440px) {
+		margin: 0 auto;
+	}
 }
 
 main {
@@ -22,58 +26,84 @@ h3 {
     border: 0;
   }
 
-.header-index {
-    height: 100px;
-    background-color: white;
-    
+.main-header {
+	width: 280px;
+	margin: 0 auto;
+	margin-top: 20px;
+	height: 200px;
+
+	@media (min-width: 1440px) {
+		height: 100px;
+    	background-color: white;
+	}
 }
 
-.logo {
-    margin: 0;
-    padding: 0;
-    display: flex;
+.navigation__logo {
+
+	@media (min-width: 1440px) {
+		margin: 0;
+    	padding: 0;
+    	display: flex;
+	}
 }
 
-.logo-link {
-    height: 100px;
-    display: flex;
-    align-items: center;
+.navigation__logo-link {
+
+	@media (min-width: 1440px) {
+		height: 100px;
+    	display: flex;
+    	align-items: center;
+	}
 }
 
-.naigation {
-    width: 1200px;
-    height: 100px;
-    margin: 0 auto;
-    display: flex;
-    
-    position: relative;
+.navigation {
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px;
+
+	@media (min-width: 1440px) {
+		width: 1200px;
+    	height: 100px;
+    	margin: 0 auto;
+    	display: flex;
+    	position: relative;
+	}
 }
 
-.naigation-block {
-    width: 550px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 20px;
+.naigation__block {
+	display: flex;
+	justify-content: space-between;
+
+	@media (min-width: 1440px) {
+		width: 550px;
+		height: 100px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-left: 20px;
+	}
 }
 
-.naigation-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 15px;
+.naigation__block-list {
+	display: none;
+
+	@media (min-width: 1440px) {
+		list-style: none;
+    	margin: 0;
+    	padding: 0;
+    	display: flex;
+    	gap: 15px;
+	}
 }
 
-.navigation-link {
+.navigation__block-link {
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
     color: #022AF5;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 20px 10px 20px;
-    
+
 }
 
 .navigation-link:hover {
@@ -236,7 +266,7 @@ h3 {
     width: 1200px;
     margin: 0 auto;
     display: flex;
-    
+
 }
 
 .cooperate-img-block {
@@ -372,6 +402,159 @@ h3 {
     text-decoration: none;
     font-weight: 500;
     font-size: 25px;
+}
+
+.catalog {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.catalog-slogan {
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    background-color: bisque;
+    background-image: url('../image/catalog/catalog-slogan.png');
+    position: relative;
+}
+
+/*
+.catalog-slogan-button {
+    text-decoration: none;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #022AF5;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    position: absolute;
+    top: 270px;
+    left: 140px;
+}*/
+
+.catalog-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.catalog-list-link {
+    text-decoration: none;
+
+}
+
+.catalog-list-link:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 24px -8px #022AF5;
+    border-radius: 10px;
+}
+
+.catalog-item {
+    width: 280px;
+    height: 280px;
+    background-color: #EAE9EE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px -8px rgba(0, 0, 0, 0.15);
+}
+
+.catalog-item-img {
+    opacity: 0.3;
+}
+
+.catalog-list-link:hover .catalog-item-img {
+    opacity: 1;
+}
+
+.catalog-item-subtitle {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px ;
+    color: #022AF5;
+    text-align: center;
+}
+
+.consumables-slogan {
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    background-color: bisque;
+    background-image: url('../image/consumables/slogan-consumables.png');
+    position: relative;
+}
+
+.consumables-product {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.consumables-product-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.consumables-product-link {
+    text-decoration: none;
+}
+
+.consumables-product-link:hover
+.consumables-product-item {
+    box-shadow: 0 8px 24px -8px #022AF5;
+}
+
+.consumables-product-item {
+    width: 285px;
+    height: 450px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px -8px rgba(0, 0, 0, .15);
+}
+
+.consumables-product-item__section-image {
+    width: 285px;
+    height: 300px;
+    background-color: #EAE9EE;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.consumables-product-item__section-description {
+    width: 285px;
+    min-height: 150px;
+    padding: 15px;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section-description__text {
+    font-weight: 700;
+    color: #022AF5;
+}
+
+.section-description__subtitle {
+    color: black;
+}
+
+.section-description__additional-text {
+    font-size: 12px;
+    color: #a6a6a6;
 }
 
 

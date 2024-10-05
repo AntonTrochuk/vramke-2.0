@@ -3,57 +3,78 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/catalog.css">
+	<link rel="stylesheet" href="style/catalog.css">
 	<link rel="stylesheet" href="style/search.css">
-    <link rel="stylesheet" href="style/consumables.css">
+	<link rel="stylesheet" href="style/consumables.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Jura:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-	
 	<title>Врамке</title>
 </head>
 
 <body>
-	<header class="header-index">
-		<nav class="naigation">
-			<div class="logo">
-				<a class="logo-link" href="index.html">
-					<img src="image/logo.png" width="260" height="65" alt="Логотип Врамке">
+	<header class="main-header">
+		<nav class="main-header__navigation navigation">
+			<div class="navigation__logo">
+				<a class="navigation__logo-link" href="index.html">
+
+					<picture class="main-header__picture-icon">
+						<source media="(min-width: 1440px)" width="260" height="65" type="image/png" srcset="image/logo.png">
+						<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/logo.png">
+						<img src="image/logo.png" width="280" height="70" alt="Логотип Врамке">
+					</picture>
+
 				</a>
 			</div>
-			<div class="naigation-block">
-				<ul class="naigation-list">
-					<li class="navigation-item">
-						<a class="navigation-link" href="index.html">
+			<div class="naigation__block">
+				<ul class="naigation__block-list">
+					<li class="navigation__block-item">
+						<a class="navigation__block-link" href="index.html">
 							Главная
 						</a>
 					</li>
-					<li class="navigation-item">
-						<a class="navigation-link" href="catalog.html">
+					<li class="navigation__block-item">
+						<a class="navigation__block-link" href="catalog.html">
 							Каталог
 						</a>
 					</li>
-					<li class="navigation-item">
-						<a class="navigation-link" href="#">
+					<li class="navigation__block-item">
+						<a class="navigation__block-link" href="#">
 							Контакты
 						</a>
 					</li>
 				</ul>
-				<div class="search">
+				<form>
+					<input type="text" placeholder="Искать здесь...">
+					<button type="submit">
+					</button>
+				</form>
+				<svg width="42" height="42" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#022AF5">
+					<g id="SVGRepo_bgCarrier" stroke-width="0" />
+					<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+					<g id="SVGRepo_iconCarrier">
+						<path d="M4 18L20 18" stroke="#022AF5" stroke-width="2" stroke-linecap="round" />
+						<path d="M4 12L20 12" stroke="#022AF5" stroke-width="2" stroke-linecap="round" />
+						<path d="M4 6L20 6" stroke="#022AF5" stroke-width="2" stroke-linecap="round" />
+					</g>
+				</svg>
+
+				<!--<div class="search">
 					<div class="container">
 						<input type="text" placeholder="Поиск">
 						<div class="search">
 
 						</div>
 					</div>
-				</div>
+				</div>-->
 			</div>
 		</nav>
 	</header>
 	<main>
 		<section class="slogan">
-			<a class="slogan-button" href="#" >
+			<a class="slogan-button" href="#">
 				Заказать
 			</a>
 		</section>
@@ -142,15 +163,15 @@
 							<div class="popular-text-block">
 								<h3 class="popular-item-subtitle">Пакеты</h3>
 								<span class="popular-item-text">от 20р за штуку</span>
-							</div>	
+							</div>
 						</li>
-					</a>	
+					</a>
 					<a class="popular-item-link" href="">
 						<li class="popular-item item-packages-mugs">
 							<div class="popular-text-block">
 								<h3 class="popular-item-subtitle">Кружки</h3>
 								<span class="popular-item-text">от 200р за штуку</span>
-							</div>	
+							</div>
 						</li>
 					</a>
 					<a class="popular-item-link" href="">
@@ -158,7 +179,7 @@
 							<div class="popular-text-block">
 								<h3 class="popular-item-subtitle">Кепки</h3>
 								<span class="popular-item-text">от 250р за штуку</span>
-							</div>	
+							</div>
 						</li>
 					</a>
 					<a class="popular-item-link" href="">
@@ -166,7 +187,7 @@
 							<div class="popular-text-block">
 								<h3 class="popular-item-subtitle">Тарелки</h3>
 								<span class="popular-item-text">от 300р за штуку</span>
-							</div>	
+							</div>
 						</li>
 					</a>
 					<a class="popular-item-link" href="">
@@ -174,7 +195,7 @@
 							<div class="popular-text-block">
 								<h3 class="popular-item-subtitle">Футболки</h3>
 								<span class="popular-item-text">от 500р за штуку</span>
-							</div>	
+							</div>
 						</li>
 					</a>
 					<a class="popular-item-link" href="catalog.html">
@@ -187,11 +208,11 @@
 				</ul>
 			</div>
 		</section>
-		
+
 	</main>
 	<footer class="index-footer">
 		<section class="footer-block">
-	
+
 			<div class="social-block">
 				<div class="social-media">
 					<a href="">
