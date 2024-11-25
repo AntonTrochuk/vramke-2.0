@@ -2,225 +2,233 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/catalog.css">
-	<link rel="stylesheet" href="style/search.css">
-    <link rel="stylesheet" href="style/consumables.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Jura:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-	
-	<title>Врамке</title>
+  <meta charset="UTF-8">
+  <title>Врамке</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/search.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Jura:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
-<body>
-	<header class="header-index">
-		<nav class="naigation">
-			<div class="logo">
-				<a class="logo-link" href="index.html">
-					<img src="image/logo.png" width="260" height="65" alt="Логотип Врамке">
-				</a>
-			</div>
-			<div class="naigation-block">
-				<ul class="naigation-list">
-					<li class="navigation-item">
-						<a class="navigation-link" href="index.html">
-							Главная
-						</a>
-					</li>
-					<li class="navigation-item">
-						<a class="navigation-link" href="catalog.html">
-							Каталог
-						</a>
-					</li>
-					<li class="navigation-item">
-						<a class="navigation-link" href="#">
-							Контакты
-						</a>
-					</li>
-				</ul>
-				<div class="search">
-					<div class="container">
-						<input type="text" placeholder="Поиск">
-						<div class="search">
+<body class="page__body">
+  <header class="main-header">
+    <nav class="main-header__navigation navigation">
+      <div class="navigation__logo logo">
+        <a class="logo__link" href="index.html">
+          <picture class="logo__picture-icon">
+            <source media="(min-width: 1440px)" width="260" height="65" type="image/png" srcset="image/logo.png">
+            <source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/logo.png">
+            <img class="logo__img" src="image/logo-mobile.svg" width="63" height="68" alt="Логотип Врамке">
+          </picture>
+        </a>
+      </div>
+      <div class="naigation__wrapper wrapper">
+        <ul class="wrapper__list">
+          <li class="wrapper__item">
+            <a class="wrapper__link" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="wrapper__item">
+            <a class="wrapper__link" href="catalog.html">
+              Каталог
+            </a>
+          </li>
+          <li class="wrapper__item">
+            <a class="wrapper__link" href="#">
+              Контакты
+            </a>
+          </li>
+        </ul>
+        <!--<div class="search">
+          <div class="container">
+            <input type="text" placeholder="Поиск">
+            <div class="search">
 
-						</div>
-					</div>
-				</div>
-			</div>
-		</nav>
-	</header>
-	<main>
-		<section class="slogan">
-			<a class="slogan-button" href="#" >
-				Заказать
-			</a>
-		</section>
-		<section class="card-product-main">
-			<ul class="card-product">
-				<li class="card-product-item">
-					<div class="card">
-						<h3 class="visually-hidden">Additional Card</h3>
-					</div>
-					<div class="card-hover">
-						<div class="card-product-item-top">
-							<h3 class="visually-hidden">Test</h3>
-						</div>
-						<div class="card-product-item-bottom">
-							<h3 class="item-bottom-subtitle">Визитки офсетная печать</h3>
-							<a class="item-bottom-link" href="#">Заказать</a>
-							<span class="item-bottom-text">400р</span>
-						</div>
-					</div>
-				</li>
-				<li class="card-product-item">
-					<div class="card">
-						<h3 class="visually-hidden">Additional Card</h3>
-					</div>
-					<div class="card-hover">
-						<div class="card-product-item-top">
-							<h3 class="visually-hidden">Test</h3>
-						</div>
-						<div class="card-product-item-bottom">
-							<h3 class="item-bottom-subtitle">Визитки офсетная печать</h3>
-							<a class="item-bottom-link" href="#">Заказать</a>
-							<span class="item-bottom-text">400р</span>
-						</div>
-					</div>
-				</li>
-				<li class="card-product-item">
-					<div class="card">
-						<h3 class="visually-hidden">Additional Card</h3>
-					</div>
-					<div class="card-hover">
-						<div class="card-product-item-top">
-							<h3 class="visually-hidden">Test</h3>
-						</div>
-						<div class="card-product-item-bottom">
-							<h3 class="item-bottom-subtitle">Визитки офсетная печать</h3>
-							<a class="item-bottom-link" href="#">Заказать</a>
-							<span class="item-bottom-text">400р</span>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</section>
-		<div class="cooperate-block">
-			<h3 class="cooperate-subtitle">Нам доверяют!</h3>
-		</div>
-		<section class="cooperate-with-us">
-			<div class="cooperate-with-us-block">
-				<div class="cooperate-img-block">
-					<div class="cooperate-img">
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <button class="navigation__toggle navigation__toggle--open" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <button class="navigation__toggle navigation__toggle--close visually-hidden" type="button">
+        <span class="visually-hidden">Закрыть меню</span>
+      </button>
+    </nav>
+  </header>
+  <main class="main-container">
+    <section class="main-container__slogan slogan">
+      <a class="slogan__button" href="#">
+        Заказать
+      </a>
+    </section>
+    <section class="main-container__card-product card-product">
+      <ul class="card-product__list">
+        <li class="card-product__item">
+          <div class="card-product__face-card">
+            <h3 class="card-product__title visually-hidden">Additional Card</h3>
+          </div>
+          <div class="card-product__hover">
+            <div class="card-product__hover-top">
+              <h3 class="card-product__title visually-hidden">Test</h3>
+            </div>
+            <div class="card-product__hover-bottom">
+              <h3 class="card-product__hover-bottom-subtitle">Визитки офсетная печать</h3>
+              <a class="card-product__hover-bottom-link" href="#">Заказать</a>
+              <span class="card-product__hover-bottom-text">400р</span>
+            </div>
+          </div>
+        </li>
+        <li class="card-product__item">
+          <div class="card-product__face-card">
+            <h3 class="card-product__title visually-hidden">Additional Card</h3>
+          </div>
+          <div class="card-product__hover">
+            <div class="card-product__hover-top">
+              <h3 class="card-product__title visually-hidden">Test</h3>
+            </div>
+            <div class="card-product__hover-bottom">
+              <h3 class="card-product__hover-bottom-subtitle">Визитки офсетная печать</h3>
+              <a class="card-product__hover-bottom-link" href="#">Заказать</a>
+              <span class="card-product__hover-bottom-text">400р</span>
+            </div>
+          </div>
+        </li>
+        <li class="card-product__item">
+          <div class="card-product__face-card">
+            <h3 class="card-product__title visually-hidden">Additional Card</h3>
+          </div>
+          <div class="card-product__hover">
+            <div class="card-product__hover-top">
+              <h3 class="card-product__title visually-hidden">Test</h3>
+            </div>
+            <div class="card-product__hover-bottom">
+              <h3 class="card-product__hover-bottom-subtitle">Визитки офсетная печать</h3>
+              <a class="card-product__hover-bottom-link" href="#">Заказать</a>
+              <span class="card-product__hover-bottom-text">400р</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <div class="main-container__cooperate-block">
+      <h3 class="main-container__cooperate-subtitle">Нам доверяют!</h3>
+    </div>
+    <section class="main-container__cooperate cooperate">
+      <div class="cooperate__block">
+        <ul class="cooperate__list-img">
+          <li class="cooperate__item-img">
 
-					</div>
-					<div class="cooperate-img logo-img">
+          </li>
+          <li class="cooperate__item-img">
 
-					</div>
-					<div class="cooperate-img">
+          </li>
+          <li class="cooperate__item-img">
 
-					</div>
-					<div class="cooperate-img logo-img-1">
+          </li>
+          <li class="cooperate__item-img">
 
-					</div>
-					<div class="cooperate-img">
+          </li>
+          <li class="cooperate__item-img">
 
-					</div>
-					<div class="cooperate-img logo-img-4">
+          </li>
+          <li class="cooperate__item-img">
 
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="popular">
-			<div class="popular-block">
-				<h2 class="popular-subtitle">Популярные товары</h2>
-				<ul class="popular-list">
-					<a class="popular-item-link" href="">
-						<li class="popular-item item-packages">
-							<div class="popular-text-block">
-								<h3 class="popular-item-subtitle">Пакеты</h3>
-								<span class="popular-item-text">от 20р за штуку</span>
-							</div>	
-						</li>
-					</a>	
-					<a class="popular-item-link" href="">
-						<li class="popular-item item-packages-mugs">
-							<div class="popular-text-block">
-								<h3 class="popular-item-subtitle">Кружки</h3>
-								<span class="popular-item-text">от 200р за штуку</span>
-							</div>	
-						</li>
-					</a>
-					<a class="popular-item-link" href="">
-						<li class="popular-item item-packages-caps">
-							<div class="popular-text-block">
-								<h3 class="popular-item-subtitle">Кепки</h3>
-								<span class="popular-item-text">от 250р за штуку</span>
-							</div>	
-						</li>
-					</a>
-					<a class="popular-item-link" href="">
-						<li class="popular-item item-packages-dishes">
-							<div class="popular-text-block">
-								<h3 class="popular-item-subtitle">Тарелки</h3>
-								<span class="popular-item-text">от 300р за штуку</span>
-							</div>	
-						</li>
-					</a>
-					<a class="popular-item-link" href="">
-						<li class="popular-item item-packages-t-shirts">
-							<div class="popular-text-block">
-								<h3 class="popular-item-subtitle">Футболки</h3>
-								<span class="popular-item-text">от 500р за штуку</span>
-							</div>	
-						</li>
-					</a>
-					<a class="popular-item-link" href="catalog.html">
-						<li class="popular-item products-link">
-							<span class="all-products-link">
-								Все товары
-							</span>
-						</li>
-					</a>
-				</ul>
-			</div>
-		</section>
-		
-	</main>
-	<footer class="index-footer">
-		<section class="footer-block">
-	
-			<div class="social-block">
-				<div class="social-media">
-					<a href="">
-						<img src="image/whatsapp.png" alt="whatsapp" width="50" height="50">
-					</a>
-					<a href="">
-						<img src="image/inst.png" alt="whatsapp" width="50" height="50">
-					</a>
-					<a href="">
-						<img src="image/tg.png" alt="whatsapp" width="50" height="50">
-					</a>
-				</div>
-				<div class="social-block-text">
-					<ul class="social-block-text-list">
-						<a class="social-block-text-link" href="">
-							<li class="social-text">
-								О нас
-							</li>
-						</a>
-						<a class="social-block-text-link" href="">
-							<li class="social-text">
-								Работать у нас
-							</li>
-						</a>
-					</ul>
-				</div>
-			</div>
-		</section>
-	</footer>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="main-container__popular popular">
+      <div class="popular__block">
+        <h2 class="popular__subtitle">Популярные товары</h2>
+        <ul class="popular__list">
+          <a class="popular__item-link" href="">
+            <li class="popular__item item-packages">
+              <div class="popular__text-block">
+                <h3 class="popular__item-subtitle">Пакеты</h3>
+                <span class="popular__item-text">от 20р за штуку</span>
+              </div>
+            </li>
+          </a>
+          <a class="popular__item-link" href="">
+            <li class="popular__item item-packages-mugs">
+              <div class="popular__text-block">
+                <h3 class="popular__item-subtitle">Кружки</h3>
+                <span class="popular__item-text">от 200р за штуку</span>
+              </div>
+            </li>
+          </a>
+          <a class="popular__item-link" href="">
+            <li class="popular__item item-packages-caps">
+              <div class="popular__text-block">
+                <h3 class="popular__item-subtitle">Кепки</h3>
+                <span class="popular__item-text">от 250р за штуку</span>
+              </div>
+            </li>
+          </a>
+          <a class="popular__item-link" href="">
+            <li class="popular__item item-packages-dishes">
+              <div class="popular__text-block">
+                <h3 class="popular__item-subtitle">Тарелки</h3>
+                <span class="popular__item-text">от 300р за штуку</span>
+              </div>
+            </li>
+          </a>
+          <a class="popular__item-link" href="">
+            <li class="popular__item item-packages-t-shirts">
+              <div class="popular__text-block">
+                <h3 class="popular__item-subtitle">Футболки</h3>
+                <span class="popular__item-text">от 500р за штуку</span>
+              </div>
+            </li>
+          </a>
+          <a class="popular__item-link" href="catalog.html">
+            <li class="popular__item products-link">
+              <span class="popular__all-products-link">
+                Все товары
+              </span>
+            </li>
+          </a>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+  <footer class="main-footer">
+    <section class="main-footer__footer-block">
+
+      <div class="main-footer__social-block">
+        <div class="social-media">
+          <a href="">
+            <img src="image/whatsapp.png" alt="whatsapp" width="50" height="50">
+          </a>
+          <a href="">
+            <img src="image/inst.png" alt="whatsapp" width="50" height="50">
+          </a>
+          <a href="">
+            <img src="image/tg.png" alt="whatsapp" width="50" height="50">
+          </a>
+        </div>
+        <div class="social-block-text">
+          <ul class="social-block-text-list">
+            <a class="social-block-text-link" href="">
+              <li class="social-text">
+                О нас
+              </li>
+            </a>
+            <a class="social-block-text-link" href="">
+              <li class="social-text">
+                Работать у нас
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </footer>
 </body>
 
 </html>
