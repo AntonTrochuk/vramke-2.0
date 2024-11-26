@@ -1,10 +1,14 @@
 .page__body {
     margin: 0 auto;
+    display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .main-container {
     background-color: white;
     position: relative;
+    flex-grow: 1;
 }
 
 h3 {
@@ -23,9 +27,9 @@ h3 {
   }
 /*-- MAIN-HEADER --*/
 .main-header {
-  height: 100px;
   background-color: white;
   min-width: 320px;
+
 
   @media (min-width: 1440px) {
     height: 100px;
@@ -36,22 +40,72 @@ h3 {
 /*-- NAVIGATION --*/
 .navigation {
   min-width: 320px;
-  height: 100px;
   margin: 0 auto;
-  padding: 25px;
+
   display: flex;
+  flex-direction: column;
   position: relative;
   align-items: center;
-  justify-content: space-between;
 
   @media (min-width: 1440px) {
     width: 1200px;
+    flex-direction: row;
   }
 }
 
+.navigation__block {
+  min-width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 25px 5px 25px;
+}
+
+.navigation__search {
+  padding: 10px 10px 5px 15px;
+  background-color: #E2E6FE;
+
+  @media (min-width: 1440px) {
+    border:none;
+  }
+}
+
+.navigation__search-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  box-sizing: border-box;
+  padding: 0 25px 0 25px;
+}
+
+.navigation__input {
+  width: 230px;
+  height: 25px;
+  border: none;
+  padding-left: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: white;
+  background-color: #E2E6FE;
+
+  &::placeholder {
+    color: white;
+  }
+}
+
+.navigation__search-button {
+  background-image: url('../image/search-icon3.svg');
+  width: 32px;
+  height: 25px;
+  border: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color:#E2E6FE;
+  cursor: pointer;
+}
+
 .navigation__toggle {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 20px;
   cursor: pointer;
 
   @media (min-width: 768px) {
@@ -75,7 +129,6 @@ h3 {
 }
 
 .logo__link {
-    height: 100px;
     display: flex;
     align-items: center;
 }
@@ -156,6 +209,52 @@ h3 {
 }
 
 /*-- card-product --*/
+.product-mobile {
+  width: 300px;
+  margin: 0 auto;
+
+  @media (min-width: 1440px) {
+    display: none;
+  }
+}
+
+.product-mobile__block {
+  padding: 10px;
+}
+
+.product-mobile__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-mobile__item-link {
+  text-decoration: none;
+}
+
+.product-mobile__item {
+  width: 280px;
+  height: 150px;
+  background-color: #244195;
+  background-image: url('../image/product-mobile-item-cup.png');
+}
+
+.product-mobile__subtitle {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  padding: 25px 0 20px 25px;
+}
+
+.product-mobile__text {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  display: block;
+  width: 120px;
+  padding-left: 25px;
+}
+
 .card-product {
   display: none;
 
@@ -272,8 +371,14 @@ h3 {
 }
 /*-- --*/
 .main-container__cooperate-block {
-    width: 1200px;
+    width: 300px;
     margin: 0 auto;
+    padding-left: 10px;
+
+    @media (min-width: 1440px) {
+      width: 1200px;
+      margin: 0 auto;
+    }
 }
 
 .main-container__cooperate-subtitle {
@@ -283,45 +388,87 @@ h3 {
   font-size: 30px;
   margin-top: 0;
   padding-bottom: 15px;
+  font-size: 20px;
+
+  @media (min-width: 1440px) {
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 0;
+  }
 }
 /*-- cooperate --*/
 .cooperate {
     background-color: #E2E6FE;
+
 }
 
 .cooperate__block {
-    width: 1200px;
-    margin: 0 auto;
+    width: 300px;
+    margin: 0;
     display: flex;
+    animation: scroll 20s linear infinite;
+    @media (min-width: 1440px) {
+      width: 1200px;
+      margin: 0 auto;
+    }
 
 }
 
 .cooperate__list-img {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
-    list-style: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  white-space: nowrap;
+  animation: scroll 15s linear infinite;
 }
 
-.cooperate__item-img{
-    width: 150px;
-    height: 150px;
-    background-image: url(..//image/2.png);
-    opacity: 0.5;
-    cursor: pointer;
 
-    &:hover {
-      opacity: 1;
-    }
+.cooperate__item-img {
+  width: 160px;
+  height: 100px;
+  background-image: url('..//image/slavica.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex-shrink: 0; /* Не сжимаем изображения */
+  margin-right: 20px; /* Отступ между изображениями */
+
+  @media (min-width: 1440px) {
+      width: 150px;
+      height: 150px;
+      opacity: 0.5;
+      cursor: pointer;
+
+      &:hover {
+          opacity: 1;
+      }
+  }
 }
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50% - 20px));
+  }
+}
+
+.insan-img {
+  background-image: url('..//image/insan.png');
+  background-size: contain;
+}
+
 
 /*-- popular --*/
 
 .popular__block {
     min-width: 290px;
+    margin: 0 auto;
+    padding-bottom: 25px;
 
     @media (min-width: 1440px) {
       width: 1200px;
@@ -333,14 +480,21 @@ h3 {
 .popular__subtitle {
   font-family: "Montserrat", sans-serif;
   color: #022AF5;
-  padding-top: 50px;
+  padding: 20px 0 15px 20px;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 20px;
+
+  @media (min-width: 1440px) {
+    padding-top: 50px;
+    font-weight: 500;
+    font-size: 30px;
+  }
 }
 
 .popular__list {
   width: 320px;
   padding: 0 20px 0 20px;
+  margin: 0 auto;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -385,39 +539,64 @@ h3 {
 }
 
 .item-packages {
-    background-image: url('../image/puplar.png');
+  background-image: url('../image/popular-packages.png');
+    @media (min-width: 1440px) {
+      background-image: url('../image/puplar.png');
+    }
 }
 
 .item-packages-mugs {
-    background-image: url('../image/puplar1.png');
+    background-image: url('../image/puplar-caps.png');
+    @media (min-width: 1440px) {
+      background-image: url('../image/puplar1.png');
+    }
 }
 
 .item-packages-caps {
-    background-image: url('../image/puplar2.png');
+    background-image: url('../image/puplar-cup.png');
+    @media (min-width: 1440px) {
+      background-image: url('../image/puplar2.png');
+    }
 }
 
 .item-packages-dishes {
-    background-image: url('../image/puplar3.png');
+    background-image: url('../image/puplar3-1.png');
+    @media (min-width: 1440px) {
+      background-image: url('../image/puplar3.png');
+    }
 }
 
 .item-packages-t-shirts {
-    background-image: url('../image/puplar4.png');
+    background-image: url('../image/puplar4-1.png');
+    @media (min-width: 1440px) {
+      background-image: url('../image/puplar4.png');
+    }
 }
 
 .popular__text-block {
-    padding: 40px 0 0 25px;
+    padding: 20px 0 0 15px;
+
+    @media (min-width: 1440px) {
+      padding: 40px 0 0 25px;
+    }
 }
 
 .popular__item-subtitle {
     font-family: "Montserrat", sans-serif;
     color: white;
-    font-size: 25px;
+    font-size: 15px;
     margin-bottom: 15px;
+
+    @media (min-width: 1440px) {
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
 }
 
 .popular__item-text {
     font-family: "Montserrat", sans-serif;
     color: white;
+    font-size: 12px;
 }
 
 .products-link {
@@ -433,20 +612,30 @@ h3 {
     color: white;
     text-decoration: none;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 20px;
+
+    @media (min-width: 1440px) {
+      width: 380px;
+      font-weight: 500;
+      font-size: 25px;
+    }
 }
 
 
 /*footer*/
 
 .main-footer {
-    min-height: 150px;
     background-color: white;
+    min-height: 100%;
 }
 
 .main-footer__footer-block {
-    width: 1200px;
+    width: 280px;
     margin: 0 auto;
+    @media (min-width: 1440px) {
+      width: 1200px;
+    margin: 0 auto;
+    }
 }
 
 .social-media {
