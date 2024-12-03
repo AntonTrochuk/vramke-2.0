@@ -63,28 +63,43 @@
   <main class="main-container">
     <section class="main-container__product-card product-card">
       <div class="product-card__section-image">
-        <img class="product-card__image" src="image/catalog/foto9.png" width="400" height="400" alt="Логотип Врамке">
+        <img class="product-card__image" src="test/chernila1.jpg" width="400" height="400" alt="Логотип Врамке">
         <div class="product-card__section-image-item">
           <a class="product-card__image-link" href="">
-            <img class="product-card__image-item" src="image/catalog/foto8.png" width="100" height="100" alt="1">
+            <img class="product-card__image-item" src="test/chernila2.jpg" width="100" height="100" alt="1">
           </a>
           <a class="product-card__image-link" href="">
-            <img class="product-card__image-item" src="image/catalog/foto9.png" width="100" height="100" alt="2">
+            <img class="product-card__image-item" src="test/chernila3.jpeg" width="100" height="100" alt="2">
           </a>
           <a class="product-card__image-link" href="">
-            <img class="product-card__image-item" src="image/catalog/foto10.png" width="100" height="100" alt="3">
+            <img class="product-card__image-item" src="test/chernila4.jpg" width="100" height="100" alt="3">
           </a>
         </div>
       </div>
       <div class="product-card__section-description">
+        <h3 class="product-card__section-description-subtitle">
+          Чернила
+        </h3>
         <form class="product-card__form" action="" method="get">
-          <input class="product-card__input" type="text" value=" " placeholder="Введите количество">
-          <input class="product-card__input-conclusion" value=" " type="text" placeholder="Здесь будет цена">
-          <select class="product-card__select" name="" id="">
+          <label class="product-card__form-label" for="enter-quantity">
+            Введите количество
+          </label>
+          <input class="product-card__input card-input" type="text" value=" " placeholder="Введите количество" name="enter-quantity">
+          <label class="product-card__form-label" for="select-type">
+            Выберете тип
+          </label>
+          <select class="product-card__select" name="select-type" id="">
             <option value="1">Водяные</option>
             <option value="2">Сублимационные</option>
           </select>
+          <label class="product-card__form-label" for="final-price">
+            Итоговая стоимость
+          </label>
+          <input class="product-card__input-conclusion card-input" value=" " type="text" placeholder="Здесь будет цена" name="final-price">
         </form>
+        <button type="button" class="product-card__section-description-button">
+          Заказать
+        </button>
       </div>
 
     </section>

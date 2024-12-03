@@ -20,7 +20,7 @@ const costCalculator = () => {
     } else if (select.value === '2') {
       price = valueInput * 150;
     }
-    conclusion.value = `${price} руб.`;
+    conclusion.value = `${price} RUB.`;
   }
   input.addEventListener('input', calculateCost);
   select.addEventListener('change', calculateCost);
