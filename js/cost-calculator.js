@@ -1,29 +1,28 @@
 const productCard = document.querySelector('.product-card__section-description');
-const form = productCard.querySelector('.product-card__form');
 const input = productCard.querySelector('.product-card__input');
 const conclusion = productCard.querySelector('.product-card__input-conclusion');
 const select = productCard.querySelector('.product-card__select');
 let valueInput;
 
 const costCalculator = () => {
-  const calculateCost = () => {
-    valueInput = input.value;
-    if (isNaN(valueInput) || valueInput <= 0) {
-      conclusion.value = "Введите корректное количество";
-      return;
-    }
+	const calculateCost = () => {
+		valueInput = input.value;
+		if (isNaN(valueInput) || valueInput <= 0) {
+			conclusion.value = "Введите корректное количество";
+			return;
+		}
 
-    let price = 0;
+		let price = 0;
 
-    if (select.value === '1') {
-      price = valueInput * 100;
-    } else if (select.value === '2') {
-      price = valueInput * 150;
-    }
-    conclusion.value = `${price} RUB.`;
-  }
-  input.addEventListener('input', calculateCost);
-  select.addEventListener('change', calculateCost);
+		if (select.value === '1') {
+			price = valueInput * 100;
+		} else if (select.value === '2') {
+			price = valueInput * 150;
+		}
+		conclusion.value = `${price} RUB.`;
+	}
+	input.addEventListener('input', calculateCost);
+	select.addEventListener('change', calculateCost);
 }
 
 export { costCalculator };
