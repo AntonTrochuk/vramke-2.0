@@ -17,18 +17,28 @@
 /* Контейнер для отображения результатов поиска */
 
 .result-search {
-	width: 350px;
-	height: 400px;
-	background-color: #022AF5;
 	position: absolute;
-	top: 0;
-	right: 111px;
-	border-radius: 20px;
-	padding: 10px 0 0 10px;
+	background-color: #022AF5;
 	font-family: "Manrope";
 	color: white;
+	border-radius: 20px;
+	padding: 10px 0 0 10px;
 	font-size: 20px;
 	box-sizing: border-box;
+	width: 350px;
+	height: 400px;
+	top: -10px;
+	left: 50%;
+    transform: translate(-50%, 0);
+
+
+	@media (min-width: 1440px) {
+		width: 350px;
+		height: 400px;
+		top: 0;
+		right: 111px;
+		transform: translate(72%, 0);
+	  }
 }
 
 .result-search--close {
@@ -860,6 +870,10 @@ to {
 
 /*CATALOG.html*/
 
+.main-catalog {
+	position: relative;
+}
+
 .main-catalog__catalog-slogan {
   display: none;
 
@@ -872,7 +886,6 @@ to {
     border-radius: 20px;
     background-color: bisque;
     background-image: url('../image/catalog/catalog-slogan.png');
-    position: relative;
   }
 }
 
