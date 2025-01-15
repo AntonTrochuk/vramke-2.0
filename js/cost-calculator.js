@@ -8,7 +8,7 @@ const costCalculator = () => {
 	const calculateCost = () => {
 		valueInput = input.value;
 		if (isNaN(valueInput) || valueInput <= 0) {
-			conclusion.value = "Введите корректное количество";
+			conclusion.value = "Введите количество";
 			return;
 		}
 

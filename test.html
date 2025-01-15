@@ -64,16 +64,32 @@
 	<main class="main-container">
 		<section class="main-container__product-card product-card">
 			<div class="product-card__section-image">
-				<img class="product-card__image" src="test/chernila1.jpg" width="400" height="400" alt="Логотип Врамке">
+				<picture>
+					<source media="(min-width: 1440px)" width="400" height="400" type="image/jpg" srcset="test/chernila1.jpg">
+					<source media="(min-width: 768px)" width="400" height="400" type="image/jpg" srcset="test/chernila1.jpg">
+					<img class="big-picture" src="test/chernila1.jpg" width="250" height="250" alt="1">
+				</picture>
 				<div class="product-card__section-image-item">
 					<a class="product-card__image-link" href="">
-						<img class="product-card__image-item" src="test/chernila2.jpg" width="100" height="100" alt="1">
+						<picture>
+							<source media="(min-width: 1440px)" width="100" height="100" type="image/jpg" srcset="test/chernila2.jpg">
+							<source media="(min-width: 768px)" width="100" height="100" type="image/jpg" srcset="test/chernila2.jpg">
+							<img class="product-card__image-item" src="test/chernila2.jpg" width="100" height="100" alt="1">
+						</picture>
 					</a>
 					<a class="product-card__image-link" href="">
-						<img class="product-card__image-item" src="test/chernila3.jpeg" width="100" height="100" alt="2">
+						<picture>
+							<source media="(min-width: 1440px)" width="100" height="100" type="image/jpeg" srcset="test/chernila3.jpeg">
+							<source media="(min-width: 768px)" width="100" height="100" type="image/jpeg" srcset="test/chernila3.jpeg">
+							<img class="product-card__image-item" src="test/chernila3.jpeg" width="100" height="100" alt="1">
+						</picture>
 					</a>
 					<a class="product-card__image-link" href="">
-						<img class="product-card__image-item" src="test/chernila4.jpg" width="100" height="100" alt="3">
+						<picture>
+							<source media="(min-width: 1440px)" width="100" height="100" type="image/jpeg" srcset="test/chernila4.jpg">
+							<source media="(min-width: 768px)" width="100" height="100" type="image/jpeg" srcset="test/chernila4.jpg">
+							<img class="product-card__image-item" src="test/chernila4.jpg" width="100" height="100" alt="1">
+						</picture>
 					</a>
 				</div>
 			</div>

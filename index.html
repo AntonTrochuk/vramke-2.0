@@ -11,6 +11,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Jura:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<script src="./js/main.js" type="module" defer></script>
 	<script src="./js/wrapper.js" defer></script>
+	<script src="./js/search.js" defer></script>
 </head>
 
 <body class="page__body">
@@ -54,7 +55,7 @@
 			</div>
 			<div class="navigation__search">
 				<form class="navigation__search-form" action="" method="get">
-					<input class="navigation__input" name="s" placeholder="Искать здесь..." type="search">
+					<input class="navigation__input" name="s" placeholder="Искать здесь..." type="search" id="searchInput">
 					<button class="navigation__search-button" type="submit"></button>
 				</form>
 			</div>
@@ -63,6 +64,21 @@
 	</header>
 	<main class="main-container">
 		<section class="main-container__slogan slogan">
+			<div class="slogan__section-text">
+				<h3 class="slogan__subtitle-strong">
+					Сделаем принты
+				</h3>
+				<h3 class="slogan__subtitle-regular">
+					На пакеты
+				</h3>
+				<p class="slogan__text">
+					Опытные сотрудники <br>учтут все ваши пожелания
+				</p>
+			</div>
+			<div class="slogan__section-image">
+				<img src="image/bags.png" width="400" height="400" alt="">
+				<span class="visually-hidden">Открыть меню</span>
+			</div>
 			<a class="slogan__button" href="#">
 				Заказать
 			</a>
@@ -233,7 +249,10 @@
 				</ul>
 			</div>
 		</section>
+		<!-- Контейнер для отображения результатов поиска -->
+		<section class="result-search result-search--close" id="results">
 
+		</section>
 	</main>
 	<footer class="main-footer">
 		<section class="main-footer__footer-block">
