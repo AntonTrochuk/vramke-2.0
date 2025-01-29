@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Врамке</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Jura:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<script src="./js/main.js" type="module" defer></script>
+	<script src="./js/wrapper.js" defer></script>
+	<script src="./js/search.js" defer></script>
+</head>
+
+<body class="page__body">
+	<header class="main-header">
+		<nav class="main-header__navigation navigation">
+			<div class="navigation__block">
+				<div class="navigation__logo logo">
+					<a class="logo__link" href="index.html">
+						<picture class="logo__picture-icon">
+							<source media="(min-width: 1440px)" width="260" height="65" type="image/png" srcset="image/logo.png">
+							<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/logo.png">
+							<img class="logo__img" src="image/logo-mobile3.svg" width="140" height="40" alt="Логотип Врамке">
+						</picture>
+					</a>
+				</div>
+				<div class="naigation__wrapper wrapper wrapper--close">
+					<ul class="wrapper__list">
+						<li class="wrapper__item">
+							<a class="wrapper__link" href="index.html">
+								Главная
+							</a>
+						</li>
+						<li class="wrapper__item">
+							<a class="wrapper__link" href="catalog.html">
+								Каталог
+							</a>
+						</li>
+						<li class="wrapper__item">
+							<a class="wrapper__link" href="#">
+								Контакты
+							</a>
+						</li>
+					</ul>
+				</div>
+				<button class="navigation__toggle navigation__toggle--open" type="button">
+					<span class="visually-hidden">Открыть меню</span>
+				</button>
+				<button class="navigation__toggle navigation__toggle--close visually-hidden" type="button">
+					<span class="visually-hidden">Закрыть меню</span>
+				</button>
+			</div>
+			<div class="navigation__search">
+				<form class="navigation__search-form" action="" method="get">
+					<input class="navigation__input" name="s" placeholder="Искать здесь..." type="search" id="searchInput">
+					<button class="navigation__search-button" type="submit"></button>
+				</form>
+			</div>
+
+		</nav>
+	</header>
+	<main class="main-catalog">
+		<section class="main-catalog__catalog-slogan">
+		</section>
+		<section class="main-catalog__catalog catalog">
+			<ul class="catalog__list">
+				<a class="catalog__list-link" href="">
+					<li class="catalog__list-item">
+						<picture class="catalog__list-picture">
+							<source media="(min-width: 1440px)" width="230" height="230" type="image/png" srcset="image/catalog/foto01.png">
+							<source media="(min-width: 768px)" width="230" height="230" type="image/png" srcset="image/catalog/foto01.png">
+							<img class="catalog__list-img" src="image/catalog/foto01.png" width="100" height="100" alt="Логотип Врамке">
+						</picture>
+						<h3 class="catalog__list-subtitle">Фотоуслуги</h3>
+					</li>
+				</a>
+				<a class="catalog__list-link" href="">
+					<li class="catalog__list-item">
+						<picture class="catalog__picture">
+							<source media="(min-width: 1440px)" width="230" height="230" type="image/png" srcset="image/catalog/foto1.png">
+							<source media="(min-width: 768px)" width="230" height="230" type="image/png" srcset="image/catalog/foto1.png">
+							<img class="catalog-item-img" src="image/catalog/foto1.png" width="100" height="100" alt="Логотип Врамке">
+						</picture>
+						<h3 class="catalog__list-subtitle">Фотосувениры</h3>
+					</li>
+				</a>
+				<a class="catalog__list-link" href="">
+					<li class="catalog__list-item">
+						<picture class="catalog__picture">
+							<source media="(min-width: 1440px)" width="230" height="230" type="image/png" srcset="image/catalog/foto21.png">
+							<source media="(min-width: 768px)" width="230" height="230" type="image/png" srcset="image/catalog/foto21.png">
+							<img class="catalog-item-img" src="image/catalog/foto21.png" width="100" height="100" alt="Логотип Врамке">
+						</picture>
+						<h3 class="catalog__list-subtitle">Типография</h3>
+					</li>
+				</a>
+				<a class="catalog__list-link" href="outdoor-advertising.html">
+					<li class="catalog__list-item">
+						<picture class="catalog__picture">
+							<source media="(min-width: 1440px)" width="230" height="230" type="image/png" srcset="image/catalog/foto3.png">
+							<source media="(min-width: 768px)" width="230" height="230" type="image/png" srcset="image/catalog/foto3.png">
+							<img class="catalog-item-img" src="image/catalog/foto3.png" width="100" height="100" alt="Логотип Врамке">
+						</picture>
+						<h3 class="catalog__list-subtitle">Наружная реклама</h3>
+					</li>
+				</a>
+				<a class="catalog__list-link" href="consumables.html">
+					<li class="catalog__list-item">
+						<picture class="catalog__picture">
+							<source media="(min-width: 1440px)" width="230" height="230" type="image/png" srcset="image/catalog/foto4.png">
+							<source media="(min-width: 768px)" width="230" height="230" type="image/png" srcset="image/catalog/foto4.png">
+							<img class="catalog-item-img" src="image/catalog/foto4.png" width="100" height="100" alt="Логотип Врамке">
+						</picture>
+						<h3 class="catalog__list-subtitle">Расходные материалы</h3>
+					</li>
+				</a>
+				<a class="catalog__list-link" href="">
+					<li class="catalog__list-item">
+						<picture class="catalog__picture">
+							<source media="(min-width: 1440px)" width="230" height="230" type="image/png" srcset="image/catalog/foto51.png">
+							<source media="(min-width: 768px)" width="230" height="230" type="image/png" srcset="image/catalog/foto51.png">
+							<img class="catalog-item-img" src="image/catalog/foto51.png" width="100" height="100" alt="Логотип Врамке">
+						</picture>
+						<h3 class="catalog__list-subtitle">Фоторамки</h3>
+					</li>
+				</a>
+				<a class="catalog__list-link" href="">
+					<li class="catalog__list-item">
+						<picture class="catalog__picture">
+							<source media="(min-width: 1440px)" width="230" height="230" type="image/png" srcset="image/catalog/foto6.png">
+							<source media="(min-width: 768px)" width="230" height="230" type="image/png" srcset="image/catalog/foto6.png">
+							<img class="catalog-item-img" src="image/catalog/foto6.png" width="100" height="100" alt="Логотип Врамке">
+						</picture>
+						<h3 class="catalog__list-subtitle">Пакеты</h3>
+					</li>
+				</a>
+				<a class="catalog__list-link" href="">
+					<li class="catalog__list-item">
+						<picture class="catalog__picture">
+							<source media="(min-width: 1440px)" width="230" height="230" type="image/png" srcset="image/catalog/foto7.png">
+							<source media="(min-width: 768px)" width="230" height="230" type="image/png" srcset="image/catalog/foto7.png">
+							<img class="catalog-item-img" src="image/catalog/foto7.png" width="100" height="100" alt="Логотип Врамке">
+						</picture>
+						<h3 class="catalog__list-subtitle">Печать чертежей</h3>
+					</li>
+				</a>
+				<a class="catalog__list-link" href="">
+					<li class="catalog__list-item">
+						<picture class="catalog__picture">
+							<source media="(min-width: 1440px)" width="230" height="230" type="image/png" srcset="image/catalog/foto8.png">
+							<source media="(min-width: 768px)" width="230" height="230" type="image/png" srcset="image/catalog/foto8.png">
+							<img class="catalog-item-img" src="image/catalog/foto8.png" width="100" height="100" alt="Логотип Врамке">
+						</picture>
+						<h3 class="catalog__list-subtitle">Печати и штампы</h3>
+					</li>
+				</a>
+				<a class="catalog__list-link" href="">
+					<li class="catalog__list-item">
+						<picture class="catalog__picture">
+							<source media="(min-width: 1440px)" width="230" height="230" type="image/png" srcset="image/catalog/foto9.png">
+							<source media="(min-width: 768px)" width="230" height="230" type="image/png" srcset="image/catalog/foto9.png">
+							<img class="catalog-item-img" src="image/catalog/foto9.png" width="100" height="100" alt="Логотип Врамке">
+						</picture>
+						<h3 class="catalog__list-subtitle">Брошюрование</h3>
+					</li>
+				</a>
+				<a class="catalog__list-link" href="">
+					<li class="catalog__list-item">
+						<picture class="catalog__picture">
+							<source media="(min-width: 1440px)" width="230" height="230" type="image/png" srcset="image/catalog/foto10.png">
+							<source media="(min-width: 768px)" width="230" height="230" type="image/png" srcset="image/catalog/foto10.png">
+							<img class="catalog-item-img" src="image/catalog/foto10.png" width="100" height="100" alt="Логотип Врамке">
+						</picture>
+						<h3 class="catalog__list-subtitle">Пищевая печать</h3>
+					</li>
+				</a>
+				<a class="catalog__list-link" href="">
+					<li class="catalog__list-item">
+						<picture class="catalog__picture">
+							<source media="(min-width: 1440px)" width="230" height="230" type="image/png" srcset="image/catalog/foto11.png">
+							<source media="(min-width: 768px)" width="230" height="230" type="image/png" srcset="image/catalog/foto11.png">
+							<img class="catalog-item-img" src="image/catalog/foto11.png" width="100" height="100" alt="Логотип Врамке">
+						</picture>
+						<h3 class="catalog__list-subtitle">Фотоальбомы</h3>
+					</li>
+				</a>
+			</ul>
+
+		</section>
+
+		<!-- Контейнер для отображения результатов поиска -->
+		<section class="result-search result-search--close" id="results">
+		</section>
+	</main>
+	<footer class="main-footer">
+		<section class="main-footer__footer-block">
+
+			<div class="main-footer__social-block">
+				<div class="social-media">
+					<a href="">
+						<img src="image/whatsapp.png" alt="whatsapp" width="40" height="40">
+					</a>
+					<a href="">
+						<img src="image/inst.png" alt="whatsapp" width="40" height="40">
+					</a>
+					<a href="">
+						<img src="image/tg.png" alt="whatsapp" width="40" height="40">
+					</a>
+				</div>
+				<div class="social-block-text">
+					<ul class="social-block-text-list">
+						<a class="social-block-text-link" href="">
+							<li class="social-text">
+								О нас
+							</li>
+						</a>
+						<a class="social-block-text-link" href="">
+							<li class="social-text">
+								Работать у нас
+							</li>
+						</a>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</footer>
+</body>
+
+</html>
