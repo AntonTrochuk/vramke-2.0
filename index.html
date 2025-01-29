@@ -5,286 +5,223 @@
 	<meta charset="UTF-8">
 	<title>Врамке</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<link rel="stylesheet" href="style/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Jura:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-	<script src="./js/main.js" type="module" defer></script>
-	<script src="./js/wrapper.js" defer></script>
-	<script src="./js/search.js" defer></script>
+	<link rel="stylesheet" href="style.css">
+	<script src="/contact-send.js"></script>
 </head>
 
 <body class="page__body">
 	<header class="main-header">
 		<nav class="main-header__navigation navigation">
-			<div class="navigation__block">
-				<div class="navigation__logo logo">
-					<a class="logo__link" href="index.html">
-						<picture class="logo__picture-icon">
-							<source media="(min-width: 1440px)" width="260" height="65" type="image/png" srcset="image/logo.png">
-							<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/logo.png">
-							<img class="logo__img" src="image/logo-mobile3.svg" width="140" height="40" alt="Логотип Врамке">
-						</picture>
-					</a>
-				</div>
-				<div class="naigation__wrapper wrapper wrapper--close">
-					<ul class="wrapper__list">
-						<li class="wrapper__item">
-							<a class="wrapper__link" href="index.html">
-								Главная
-							</a>
-						</li>
-						<li class="wrapper__item">
-							<a class="wrapper__link" href="catalog.html">
-								Каталог
-							</a>
-						</li>
-						<li class="wrapper__item">
-							<a class="wrapper__link" href="#">
-								Контакты
-							</a>
-						</li>
-					</ul>
-				</div>
-				<button class="navigation__toggle navigation__toggle--open" type="button">
-					<span class="visually-hidden">Открыть меню</span>
-				</button>
-				<button class="navigation__toggle navigation__toggle--close visually-hidden" type="button">
-					<span class="visually-hidden">Закрыть меню</span>
-				</button>
+			<div class="navigation__communication ">
+				<a class="navigation__communication-link" href="tel:+74956660266">
+					+7 (812) 812-12-12
+				</a>
+				<a class="navigation__communication-link" href="#">
+					Fotosalonvramke@mail.ru
+				</a>
 			</div>
-			<div class="navigation__search">
-				<form class="navigation__search-form" action="" method="get">
-					<input class="navigation__input" name="s" placeholder="Искать здесь..." type="search" id="searchInput">
-					<button class="navigation__search-button" type="submit"></button>
-				</form>
+			<div class="navigation__logo">
+				<picture class="navigation__logo-picture-icon">
+					<source media="(min-width: 1440px)" width="450" height="100" type="image/png" srcset="image/logo12.png">
+					<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/logo.png">
+					<img class="navigation__logo-img" src="image/logo12.png" width="140" height="40" alt="Логотип Врамке">
+				</picture>
 			</div>
-
+			<div class="naigation__social-network">
+				<a class="naigation__social-network-link" href="">
+					<img src="/image/instagram.png" width="40" height="40" alt="">
+				</a>
+				<a class="naigation__social-network-link" href="">
+					<img src="/image/whatsapp.png" width="40" height="40" alt="">
+				</a>
+				<a class="naigation__social-network-link" href="">
+					<img src="/image/pinterest.png" width="40" height="40" alt="">
+				</a>
+			</div>
 		</nav>
 	</header>
 	<main class="main-container">
-		<section class="main-container__slogan slogan">
-			<div class="slogan__section-text">
-				<h3 class="slogan__subtitle-strong">
-					Сделаем принты
-				</h3>
-				<h3 class="slogan__subtitle-regular">
-					На пакеты
-				</h3>
-				<p class="slogan__text">
-					Опытные сотрудники <br>учтут все ваши пожелания
-				</p>
-			</div>
-			<div class="slogan__section-image">
-				<img src="image/bags.png" width="400" height="400" alt="">
-				<span class="visually-hidden">Открыть меню</span>
-			</div>
-			<a class="slogan__button" href="#">
-				Заказать
-			</a>
-		</section>
-		<section class="main-container__product-mobile product-mobile">
-			<div class="product-mobile__block">
-				<ul class="product-mobile__list">
-					<a class="product-mobile__item-link" href="">
-						<li class="product-mobile__item">
-							<h3 class="product-mobile__subtitle">
-								Кружки
-							</h3>
-							<span class="product-mobile__text">
-								От 300 р
-							</span>
-						</li>
-					</a>
-					<a class="product-mobile__item-link" href="">
-						<li class="product-mobile__item">
-							<h3 class="product-mobile__subtitle">
-								Кружки
-							</h3>
-							<span class="product-mobile__text">
-								От 300 р
-							</span>
-						</li>
-					</a>
-					<a class="product-mobile__item-link" href="">
-						<li class="product-mobile__item">
-							<h3 class="product-mobile__subtitle">
-								Кружки
-							</h3>
-							<span class="product-mobile__text">
-								От 300 р
-							</span>
-						</li>
-					</a>
-				</ul>
-			</div>
-		</section>
-		<section class="main-container__card-product card-product">
-			<ul class="card-product__list">
-				<li class="card-product__item">
-					<div class="card-product__face-card">
-						<h3 class="card-product__title visually-hidden">Additional Card</h3>
-					</div>
-					<div class="card-product__hover">
-						<div class="card-product__hover-top">
-							<h3 class="card-product__title visually-hidden">Test</h3>
-						</div>
-						<div class="card-product__hover-bottom">
-							<h3 class="card-product__hover-bottom-subtitle">Визитки офсетная печать</h3>
-							<a class="card-product__hover-bottom-link" href="#">Заказать</a>
-							<span class="card-product__hover-bottom-text">400р</span>
-						</div>
-					</div>
-				</li>
-				<li class="card-product__item">
-					<div class="card-product__face-card">
-						<h3 class="card-product__title visually-hidden">Additional Card</h3>
-					</div>
-					<div class="card-product__hover">
-						<div class="card-product__hover-top">
-							<h3 class="card-product__title visually-hidden">Test</h3>
-						</div>
-						<div class="card-product__hover-bottom">
-							<h3 class="card-product__hover-bottom-subtitle">Визитки офсетная печать</h3>
-							<a class="card-product__hover-bottom-link" href="#">Заказать</a>
-							<span class="card-product__hover-bottom-text">400р</span>
-						</div>
-					</div>
-				</li>
-				<li class="card-product__item">
-					<div class="card-product__face-card">
-						<h3 class="card-product__title visually-hidden">Additional Card</h3>
-					</div>
-					<div class="card-product__hover">
-						<div class="card-product__hover-top">
-							<h3 class="card-product__title visually-hidden">Test</h3>
-						</div>
-						<div class="card-product__hover-bottom">
-							<h3 class="card-product__hover-bottom-subtitle">Визитки офсетная печать</h3>
-							<a class="card-product__hover-bottom-link" href="#">Заказать</a>
-							<span class="card-product__hover-bottom-text">400р</span>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</section>
-		<div class="main-container__cooperate-block">
-			<h3 class="main-container__cooperate-subtitle">Нам доверяют!</h3>
-		</div>
-		<section class="main-container__cooperate cooperate">
-			<div class="cooperate__block">
-				<ul class="cooperate__list-img">
-					<li class="cooperate__item-img">
-
-					</li>
-					<li class="cooperate__item-img">
-
-					</li>
-					<li class="cooperate__item-img insan-img">
-
-					</li>
-					<li class="cooperate__item-img">
-
-					</li>
-					<li class="cooperate__item-img">
-
-					</li>
-					<li class="cooperate__item-img">
-
-					</li>
-				</ul>
-			</div>
-		</section>
-		<section class="main-container__popular popular">
-			<div class="popular__block">
-				<h2 class="popular__subtitle">Популярные товары</h2>
-				<ul class="popular__list">
-					<a class="popular__item-link" href="">
-						<li class="popular__item item-packages">
-							<div class="popular__text-block">
-								<h3 class="popular__item-subtitle">Пакеты</h3>
-								<span class="popular__item-text">от 20р за штуку</span>
-							</div>
-						</li>
-					</a>
-					<a class="popular__item-link" href="">
-						<li class="popular__item item-packages-mugs">
-							<div class="popular__text-block">
-								<h3 class="popular__item-subtitle">Кружки</h3>
-								<span class="popular__item-text">от 200р за штуку</span>
-							</div>
-						</li>
-					</a>
-					<a class="popular__item-link" href="">
-						<li class="popular__item item-packages-caps">
-							<div class="popular__text-block">
-								<h3 class="popular__item-subtitle">Кепки</h3>
-								<span class="popular__item-text">от 250р за штуку</span>
-							</div>
-						</li>
-					</a>
-					<a class="popular__item-link" href="">
-						<li class="popular__item item-packages-dishes">
-							<div class="popular__text-block">
-								<h3 class="popular__item-subtitle">Тарелки</h3>
-								<span class="popular__item-text">от 300р за штуку</span>
-							</div>
-						</li>
-					</a>
-					<a class="popular__item-link" href="">
-						<li class="popular__item item-packages-t-shirts">
-							<div class="popular__text-block">
-								<h3 class="popular__item-subtitle">Футболки</h3>
-								<span class="popular__item-text">от 500р за штуку</span>
-							</div>
-						</li>
-					</a>
-					<a class="popular__item-link" href="catalog.html">
-						<li class="popular__item products-link">
-							<span class="popular__all-products-link">
-								Все товары
-							</span>
-						</li>
-					</a>
-				</ul>
-			</div>
-		</section>
-		<!-- Контейнер для отображения результатов поиска -->
-		<section class="result-search result-search--close" id="results">
-
-		</section>
-	</main>
-	<footer class="main-footer">
-		<section class="main-footer__footer-block">
-
-			<div class="main-footer__social-block">
-				<div class="social-media">
-					<a href="">
-						<img src="image/whatsapp.png" alt="whatsapp" width="40" height="40">
-					</a>
-					<a href="">
-						<img src="image/inst.png" alt="whatsapp" width="40" height="40">
-					</a>
-					<a href="">
-						<img src="image/tg.png" alt="whatsapp" width="40" height="40">
+		<section class="main-container__initial-banner initial-banner">
+			<div class="initial-banner__container fullscreen-bg">
+				<div class="initial-banner__slogan">
+					<h3 class="initial-banner__subtitle">
+						Производство качественной печатной продукции
+					</h3>
+					<a class="initial-banner__link" href="#contact">
+						Связаться с менеджером
 					</a>
 				</div>
-				<div class="social-block-text">
-					<ul class="social-block-text-list">
-						<a class="social-block-text-link" href="">
-							<li class="social-text">
-								О нас
-							</li>
-						</a>
-						<a class="social-block-text-link" href="">
-							<li class="social-text">
-								Работать у нас
-							</li>
-						</a>
+				<video loop="" muted="" autoplay="" poster="video/plane.jpg" class="fullscreen-bg__video">
+					<source src="/plane.mp4" type="video/mp4">
+				</video>
+			</div>
+		</section>
+
+		<section class="main-container__about-section about-section">
+			<div class="about-section__container">
+				<h3 class="about-section__subtitle">
+					Типография «Врамке» – с 2014 года доставляет полиграфию по Астраханской области и всей России
+				</h3>
+				<div class="about-section__card">
+					<ul class="about-section__list">
+						<li class="about-section__item">
+							<div class="about-section__item-img img-about1"> <!--Заменить классы, сделать через ul-->
+
+							</div>
+							<div class="about-section__item-text-block">
+								<h3 class="about-section__item-subtitle">
+									Помощь дизайнера
+								</h3>
+								<p class="about-section__item-text">
+									Если вы не уверены, что эскиз будет хорошо смотреться на бумаге – наши специалисты придут на помощь.
+								</p>
+							</div>
+						</li>
+						<li class="about-section__item">
+							<div class="about-section__item-img img-about2">
+
+							</div>
+							<div class="about-section__item-text-block">
+								<h3 class="about-section__item-subtitle">
+									Строгое соблюдение сроков
+								</h3>
+								<p class="about-section__item-text">
+									Сразу рассчитаем, когда все будет готово, в случае опоздания вручим подарок или вернем часть внесенной суммы
+								</p>
+							</div>
+						</li>
+						<li class="about-section__item">
+							<div class="about-section__item-img img-about3">
+
+							</div>
+							<div class="about-section__item-text-block">
+								<h3 class="about-section__item-subtitle">
+									Высокое качество печати
+								</h3>
+								<p class="about-section__item-text">
+									Цвета совпадут с изначальным файлом, не будет потертостей, поврежденных экземпляров и других недостатков.
+								</p>
+							</div>
+						</li>
 					</ul>
 				</div>
 			</div>
 		</section>
+		<section class="main-container__services services">
+			<div class="services__container">
+				<div class="services__card advertising">
+					<div class="services__description advertising-description">
+						<h3 class="services__subtitle">
+							Наружная реклама
+						</h3>
+						<div class="services__section-text advertising-text">
+							<span class="services__text">Печать на баннере</span>
+							<span class="services__text">Адресные таблички</span>
+							<span class="services__text">Брендирование авто</span>
+							<span class="services__text">Штендеры</span>
+						</div>
+						<button class="services__button">
+							Оставить заявку
+						</button>
+					</div>
+					<div class="services__container-image">
+						<img class="services__img" src="/image/p2.jpg" width="700" height="420" alt="" id="advertisingImage">
+						<button class="services__button-image button-image--left "></button>
+						<button class="services__button-image button-image--right "></button>
+					</div>
+				</div>
+				<div class="services__card printing">
+					<div class="services__description printing-description">
+						<h3 class="services__subtitle">
+							Типография
+						</h3>
+						<div class="services__section-text printing-text">
+							<span class="services__text">Листовки</span>
+							<span class="services__text">Визитки</span>
+							<span class="services__text">Буклеты</span>
+							<span class="services__text">Наклейки</span>
+						</div>
+						<button class="services__button">
+							Оставить заявку
+						</button>
+					</div>
+					<div class="services__container-image">
+						<img class="services__img" src="/image/p1.jpg" width="700" height="420" alt="" id="printingImage">
+					</div>
+				</div>
+				<div class="services__card souvenir">
+					<div class="services__description souvenir-description">
+						<h3 class="services__subtitle">
+							Сувенирные товары
+						</h3>
+						<div class="services__section-text souvenir-text">
+							<span class="services__text">Печать на холсте</span>
+							<span class="services__text">Печать на кружках</span>
+							<span class="services__text">Фотосветильники</span>
+							<span class="services__text">Лазерная гравировка</span>
+						</div>
+						<button class="services__button">
+							Оставить заявку
+						</button>
+					</div>
+					<div class="services__container-image">
+						<img class="services__img" src="/image/p3.jpg" width="700" height="420" alt="" id="souvenirImage">
+					</div>
+				</div>
+				<div class="services__card digital">
+					<div class="services__description digital-description">
+						<h3 class="services__subtitle">
+							Цифровая печать
+						</h3>
+						<div class="services__section-text digital-text">
+							<span class="services__text">Печать на самоклейке</span>
+							<span class="services__text">Шелкография</span>
+							<span class="services__text">УФ-печать</span>
+							<span class="services__text">Печать чертежей</span>
+						</div>
+						<button class="services__button">
+							Оставить заявку
+						</button>
+					</div>
+					<div class="services__container-image">
+						<img class="services__img" src="/image/p4.jpg" width="700" height="420" alt="" id="digitalImage">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="main-container__contact contact" id="contact">
+			<h3 class="contact__subtitle">
+				Оставьте Ваш номер телефона и менеджер свяжется с вами
+			</h3>
+			<div>
+				<form class="contact__form-block" enctype="multipart/form-data" method="post" id="form" onsubmit="submitForm(event)" action="/send.php">
+					<input class="contact__input" name="name" type="text" placeholder="Введите номер телефона">
+					<input class="contact__button" value="Отправить" type="submit">
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer class="main-footer footer">
+		<ul class="footer__list">
+			<li class="footer__item">
+				Контакты
+			</li>
+			<li class="footer__item">
+				Сотрудничество
+			</li>
+			<li class="footer__item">
+				Работать у нас
+			</li>
+		</ul>
+		<div class="navigation__logo">
+			<picture class="navigation__logo-picture-icon">
+				<source media="(min-width: 1440px)" width="450" height="100" type="image/png" srcset="image/logo1.png">
+				<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/logo.png">
+				<img class="navigation__logo-img" src="image/logo1.png" width="140" height="40" alt="Логотип Врамке">
+			</picture>
+		</div>
 	</footer>
 </body>
 
