@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Врамке</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Jura:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<script src="./js/main.js" type="module" defer></script>
+	<script src="./js/wrapper.js" defer></script>
+</head>
+
+<body class="page__body">
+	<header class="main-header">
+		<nav class="main-header__navigation navigation">
+			<div class="navigation__block">
+				<div class="navigation__logo logo">
+					<a class="logo__link" href="index.html">
+						<picture class="logo__picture-icon">
+							<source media="(min-width: 1440px)" width="260" height="65" type="image/png" srcset="image/logo.png">
+							<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/logo.png">
+							<img class="logo__img" src="image/logo-mobile3.svg" width="140" height="40" alt="Логотип Врамке">
+						</picture>
+					</a>
+				</div>
+				<div class="naigation__wrapper wrapper wrapper--close">
+					<ul class="wrapper__list">
+						<li class="wrapper__item">
+							<a class="wrapper__link" href="index.html">
+								Главная
+							</a>
+						</li>
+						<li class="wrapper__item">
+							<a class="wrapper__link" href="catalog.html">
+								Каталог
+							</a>
+						</li>
+						<li class="wrapper__item">
+							<a class="wrapper__link" href="#">
+								Контакты
+							</a>
+						</li>
+					</ul>
+				</div>
+				<button class="navigation__toggle navigation__toggle--open" type="button">
+					<span class="visually-hidden">Открыть меню</span>
+				</button>
+				<button class="navigation__toggle navigation__toggle--close visually-hidden" type="button">
+					<span class="visually-hidden">Закрыть меню</span>
+				</button>
+			</div>
+			<div class="navigation__search">
+				<form class="navigation__search-form" action="" method="get">
+					<input class="navigation__input" name="s" placeholder="Искать здесь..." type="search">
+					<button class="navigation__search-button" type="submit"></button>
+				</form>
+			</div>
+
+		</nav>
+	</header>
+	<main class="main-consumables">
+		<section class="consumables-slogan">
+			<!-- <a class="catalog-slogan-button" href="#" >
+				Заказать
+			</a> -->
+		</section>
+		<section class="consumables-product">
+			<ul class="consumables-product-list">
+				<a class="consumables-product-link" href="">
+					<li class="consumables-product-item">
+						<div class="consumables-product-item__section-image">
+							<picture>
+								<source media="(min-width: 1440px)" width="250" height="250" type="image/png" srcset="image/consumables/foto_b.png">
+								<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/consumables/foto_b.png">
+								<img class="logo__img" src="image/consumables/foto_b.png" width="160" height="180" alt="Логотип Врамке">
+							</picture>
+						</div>
+						<div class="consumables-product-item__section-description">
+							<span class="section-description__text">
+								От 300 &#8381;
+							</span>
+							<h3 class="section-description__subtitle">
+								Печать на холсте
+							</h3>
+							<span class="section-description__additional-text">
+								Глянцевая / Матовая / Мелованная / Самоклеящаяся / Сублимационная
+							</span>
+						</div>
+					</li>
+				</a>
+				<a class="consumables-product-link" href="test.html">
+					<li class="consumables-product-item">
+						<div class="consumables-product-item__section-image">
+							<picture>
+								<source media="(min-width: 1440px)" width="250" height="250" type="image/png" srcset="image/consumables/chern.png">
+								<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/consumables/chern.png">
+								<img class="logo__img" src="image/consumables/chern.png" width="160" height="180" alt="Логотип Врамке">
+							</picture>
+						</div>
+						<div class="consumables-product-item__section-description">
+							<span class="section-description__text">
+								От 500 &#8381;
+							</span>
+							<h3 class="section-description__subtitle">
+								Печать на кружках
+							</h3>
+							<span class="section-description__additional-text">
+								Водяные / Сублимационные /
+							</span>
+						</div>
+					</li>
+				</a>
+				<a class="consumables-product-link" href="">
+					<li class="consumables-product-item">
+						<div class="consumables-product-item__section-image">
+							<picture>
+								<source media="(min-width: 1440px)" width="250" height="250" type="image/png" srcset="image/consumables/plenka.png">
+								<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/consumables/plenka.png">
+								<img class="logo__img" src="image/consumables/plenka.png" width="160" height="180" alt="Логотип Врамке">
+							</picture>
+						</div>
+						<div class="consumables-product-item__section-description">
+							<span class="section-description__text">
+								От 300 &#8381;
+							</span>
+							<h3 class="section-description__subtitle">
+								Пазлы
+							</h3>
+							<span class="section-description__additional-text">
+								Имеется вохможность заказа оптом
+							</span>
+						</div>
+					</li>
+				</a>
+				<a class="consumables-product-link" href="">
+					<li class="consumables-product-item">
+						<div class="consumables-product-item__section-image">
+							<picture>
+								<source media="(min-width: 1440px)" width="250" height="250" type="image/png" srcset="image/consumables/plenka.png">
+								<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/consumables/plenka.png">
+								<img class="logo__img" src="image/consumables/plenka.png" width="160" height="180" alt="Логотип Врамке">
+							</picture>
+						</div>
+						<div class="consumables-product-item__section-description">
+							<span class="section-description__text">
+								От 300 &#8381;
+							</span>
+							<h3 class="section-description__subtitle">
+								Автобрелки
+							</h3>
+							<span class="section-description__additional-text">
+								Имеется вохможность заказа оптом
+							</span>
+						</div>
+					</li>
+				</a>
+				<a class="consumables-product-link" href="">
+					<li class="consumables-product-item">
+						<div class="consumables-product-item__section-image">
+							<picture>
+								<source media="(min-width: 1440px)" width="250" height="250" type="image/png" srcset="image/consumables/plenka.png">
+								<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/consumables/plenka.png">
+								<img class="logo__img" src="image/consumables/plenka.png" width="160" height="180" alt="Логотип Врамке">
+							</picture>
+						</div>
+						<div class="consumables-product-item__section-description">
+							<span class="section-description__text">
+								От 300 &#8381;
+							</span>
+							<h3 class="section-description__subtitle">
+								Печать на тарелках
+							</h3>
+							<span class="section-description__additional-text">
+								Имеется вохможность заказа оптом
+							</span>
+						</div>
+					</li>
+				</a>
+				<a class="consumables-product-link" href="">
+					<li class="consumables-product-item">
+						<div class="consumables-product-item__section-image">
+							<picture>
+								<source media="(min-width: 1440px)" width="250" height="250" type="image/png" srcset="image/consumables/plenka.png">
+								<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/consumables/plenka.png">
+								<img class="logo__img" src="image/consumables/plenka.png" width="160" height="180" alt="Логотип Врамке">
+							</picture>
+						</div>
+						<div class="consumables-product-item__section-description">
+							<span class="section-description__text">
+								От 300 &#8381;
+							</span>
+							<h3 class="section-description__subtitle">
+								Чехлы
+							</h3>
+							<span class="section-description__additional-text">
+								Имеется вохможность заказа оптом
+							</span>
+						</div>
+					</li>
+				</a>
+				<a class="consumables-product-link" href="">
+					<li class="consumables-product-item">
+						<div class="consumables-product-item__section-image">
+							<picture>
+								<source media="(min-width: 1440px)" width="250" height="250" type="image/png" srcset="image/consumables/plenka.png">
+								<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/consumables/plenka.png">
+								<img class="logo__img" src="image/consumables/plenka.png" width="160" height="180" alt="Логотип Врамке">
+							</picture>
+						</div>
+						<div class="consumables-product-item__section-description">
+							<span class="section-description__text">
+								От 300 &#8381;
+							</span>
+							<h3 class="section-description__subtitle">
+								Слюнявчики
+							</h3>
+							<span class="section-description__additional-text">
+								Имеется вохможность заказа оптом
+							</span>
+						</div>
+					</li>
+				</a>
+				<a class="consumables-product-link" href="">
+					<li class="consumables-product-item">
+						<div class="consumables-product-item__section-image">
+							<picture>
+								<source media="(min-width: 1440px)" width="250" height="250" type="image/png" srcset="image/consumables/plenka.png">
+								<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/consumables/plenka.png">
+								<img class="logo__img" src="image/consumables/plenka.png" width="160" height="180" alt="Логотип Врамке">
+							</picture>
+						</div>
+						<div class="consumables-product-item__section-description">
+							<span class="section-description__text">
+								От 300 &#8381;
+							</span>
+							<h3 class="section-description__subtitle">
+								Кепки
+							</h3>
+							<span class="section-description__additional-text">
+								Имеется вохможность заказа оптом
+							</span>
+						</div>
+					</li>
+				</a>
+				<a class="consumables-product-link" href="">
+					<li class="consumables-product-item">
+						<div class="consumables-product-item__section-image">
+							<picture>
+								<source media="(min-width: 1440px)" width="250" height="250" type="image/png" srcset="image/consumables/plenka.png">
+								<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/consumables/plenka.png">
+								<img class="logo__img" src="image/consumables/plenka.png" width="160" height="180" alt="Логотип Врамке">
+							</picture>
+						</div>
+						<div class="consumables-product-item__section-description">
+							<span class="section-description__text">
+								От 300 &#8381;
+							</span>
+							<h3 class="section-description__subtitle">
+								Футболки
+							</h3>
+							<span class="section-description__additional-text">
+								Имеется вохможность заказа оптом
+							</span>
+						</div>
+					</li>
+				</a>
+				<a class="consumables-product-link" href="">
+					<li class="consumables-product-item">
+						<div class="consumables-product-item__section-image">
+							<picture>
+								<source media="(min-width: 1440px)" width="250" height="250" type="image/png" srcset="image/consumables/plenka.png">
+								<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/consumables/plenka.png">
+								<img class="logo__img" src="image/consumables/plenka.png" width="160" height="180" alt="Логотип Врамке">
+							</picture>
+						</div>
+						<div class="consumables-product-item__section-description">
+							<span class="section-description__text">
+								От 300 &#8381;
+							</span>
+							<h3 class="section-description__subtitle">
+								Магниты
+							</h3>
+							<span class="section-description__additional-text">
+								Имеется вохможность заказа оптом
+							</span>
+						</div>
+					</li>
+				</a>
+				<a class="consumables-product-link" href="">
+					<li class="consumables-product-item">
+						<div class="consumables-product-item__section-image">
+							<picture>
+								<source media="(min-width: 1440px)" width="250" height="250" type="image/png" srcset="image/consumables/plenka.png">
+								<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/consumables/plenka.png">
+								<img class="logo__img" src="image/consumables/plenka.png" width="160" height="180" alt="Логотип Врамке">
+							</picture>
+						</div>
+						<div class="consumables-product-item__section-description">
+							<span class="section-description__text">
+								От 300 &#8381;
+							</span>
+							<h3 class="section-description__subtitle">
+								Автодокументы
+							</h3>
+							<span class="section-description__additional-text">
+								Имеется вохможность заказа оптом
+							</span>
+						</div>
+					</li>
+				</a>
+				<a class="consumables-product-link" href="">
+					<li class="consumables-product-item">
+						<div class="consumables-product-item__section-image">
+							<picture>
+								<source media="(min-width: 1440px)" width="250" height="250" type="image/png" srcset="image/consumables/plenka.png">
+								<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/consumables/plenka.png">
+								<img class="logo__img" src="image/consumables/plenka.png" width="160" height="180" alt="Логотип Врамке">
+							</picture>
+						</div>
+						<div class="consumables-product-item__section-description">
+							<span class="section-description__text">
+								От 300 &#8381;
+							</span>
+							<h3 class="section-description__subtitle">
+								Подушки
+							</h3>
+							<span class="section-description__additional-text">
+								Имеется вохможность заказа оптом
+							</span>
+						</div>
+					</li>
+				</a>
+				<a class="consumables-product-link" href="">
+					<li class="consumables-product-item">
+						<div class="consumables-product-item__section-image">
+							<picture>
+								<source media="(min-width: 1440px)" width="250" height="250" type="image/png" srcset="image/consumables/plenka.png">
+								<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/consumables/plenka.png">
+								<img class="logo__img" src="image/consumables/plenka.png" width="160" height="180" alt="Логотип Врамке">
+							</picture>
+						</div>
+						<div class="consumables-product-item__section-description">
+							<span class="section-description__text">
+								От 300 &#8381;
+							</span>
+							<h3 class="section-description__subtitle">
+								Часы
+							</h3>
+							<span class="section-description__additional-text">
+								Имеется вохможность заказа оптом
+							</span>
+						</div>
+					</li>
+				</a>
+				<a class="consumables-product-link" href="">
+					<li class="consumables-product-item">
+						<div class="consumables-product-item__section-image">
+							<picture>
+								<source media="(min-width: 1440px)" width="250" height="250" type="image/png" srcset="image/consumables/plenka.png">
+								<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/consumables/plenka.png">
+								<img class="logo__img" src="image/consumables/plenka.png" width="160" height="180" alt="Логотип Врамке">
+							</picture>
+						</div>
+						<div class="consumables-product-item__section-description">
+							<span class="section-description__text">
+								От 300 &#8381;
+							</span>
+							<h3 class="section-description__subtitle">
+								Коврик для мыши
+							</h3>
+							<span class="section-description__additional-text">
+								Имеется вохможность заказа оптом
+							</span>
+						</div>
+					</li>
+				</a>
+				<a class="consumables-product-link" href="">
+					<li class="consumables-product-item">
+						<div class="consumables-product-item__section-image">
+							<picture>
+								<source media="(min-width: 1440px)" width="250" height="250" type="image/png" srcset="image/consumables/plenka.png">
+								<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/consumables/plenka.png">
+								<img class="logo__img" src="image/consumables/plenka.png" width="160" height="180" alt="Логотип Врамке">
+							</picture>
+						</div>
+						<div class="consumables-product-item__section-description">
+							<span class="section-description__text">
+								От 300 &#8381;
+							</span>
+							<h3 class="section-description__subtitle">
+								копилки
+							</h3>
+							<span class="section-description__additional-text">
+								Имеется вохможность заказа оптом
+							</span>
+						</div>
+					</li>
+				</a>
+				<a class="consumables-product-link" href="">
+					<li class="consumables-product-item">
+						<div class="consumables-product-item__section-image">
+							<picture>
+								<source media="(min-width: 1440px)" width="250" height="250" type="image/png" srcset="image/consumables/plenka.png">
+								<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/consumables/plenka.png">
+								<img class="logo__img" src="image/consumables/plenka.png" width="160" height="180" alt="Логотип Врамке">
+							</picture>
+						</div>
+						<div class="consumables-product-item__section-description">
+							<span class="section-description__text">
+								От 300 &#8381;
+							</span>
+							<h3 class="section-description__subtitle">
+								Фляжки
+							</h3>
+							<span class="section-description__additional-text">
+								Имеется вохможность заказа оптом
+							</span>
+						</div>
+					</li>
+				</a>
+				<a class="consumables-product-link" href="">
+					<li class="consumables-product-item">
+						<div class="consumables-product-item__section-image">
+							<picture>
+								<source media="(min-width: 1440px)" width="250" height="250" type="image/png" srcset="image/consumables/plenka.png">
+								<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/consumables/plenka.png">
+								<img class="logo__img" src="image/consumables/plenka.png" width="160" height="180" alt="Логотип Врамке">
+							</picture>
+						</div>
+						<div class="consumables-product-item__section-description">
+							<span class="section-description__text">
+								От 300 &#8381;
+							</span>
+							<h3 class="section-description__subtitle">
+								Вымпелы
+							</h3>
+							<span class="section-description__additional-text">
+								Имеется вохможность заказа оптом
+							</span>
+						</div>
+					</li>
+				</a>
+				<a class="consumables-product-link" href="">
+					<li class="consumables-product-item">
+						<div class="consumables-product-item__section-image">
+							<picture>
+								<source media="(min-width: 1440px)" width="250" height="250" type="image/png" srcset="image/consumables/plenka.png">
+								<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/consumables/plenka.png">
+								<img class="logo__img" src="image/consumables/plenka.png" width="160" height="180" alt="Логотип Врамке">
+							</picture>
+						</div>
+						<div class="consumables-product-item__section-description">
+							<span class="section-description__text">
+								От 300 &#8381;
+							</span>
+							<h3 class="section-description__subtitle">
+								Фартуки
+							</h3>
+							<span class="section-description__additional-text">
+								Имеется вохможность заказа оптом
+							</span>
+						</div>
+					</li>
+				</a>
+				<a class="consumables-product-link" href="">
+					<li class="consumables-product-item">
+						<div class="consumables-product-item__section-image">
+							<picture>
+								<source media="(min-width: 1440px)" width="250" height="250" type="image/png" srcset="image/consumables/plenka.png">
+								<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/consumables/plenka.png">
+								<img class="logo__img" src="image/consumables/plenka.png" width="160" height="180" alt="Логотип Врамке">
+							</picture>
+						</div>
+						<div class="consumables-product-item__section-description">
+							<span class="section-description__text">
+								От 300 &#8381;
+							</span>
+							<h3 class="section-description__subtitle">
+								Полотенца
+							</h3>
+							<span class="section-description__additional-text">
+								Имеется вохможность заказа оптом
+							</span>
+						</div>
+					</li>
+				</a>
+				<a class="consumables-product-link" href="">
+					<li class="consumables-product-item">
+						<div class="consumables-product-item__section-image">
+							<picture>
+								<source media="(min-width: 1440px)" width="250" height="250" type="image/png" srcset="image/consumables/plenka.png">
+								<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/consumables/plenka.png">
+								<img class="logo__img" src="image/consumables/plenka.png" width="160" height="180" alt="Логотип Врамке">
+							</picture>
+						</div>
+						<div class="consumables-product-item__section-description">
+							<span class="section-description__text">
+								От 300 &#8381;
+							</span>
+							<h3 class="section-description__subtitle">
+								Фотосветильники
+							</h3>
+							<span class="section-description__additional-text">
+								Имеется вохможность заказа оптом
+							</span>
+						</div>
+					</li>
+				</a>
+				<a class="consumables-product-link" href="">
+					<li class="consumables-product-item">
+						<div class="consumables-product-item__section-image">
+							<picture>
+								<source media="(min-width: 1440px)" width="250" height="250" type="image/png" srcset="image/consumables/plenka.png">
+								<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/consumables/plenka.png">
+								<img class="logo__img" src="image/consumables/plenka.png" width="160" height="180" alt="Логотип Врамке">
+							</picture>
+						</div>
+						<div class="consumables-product-item__section-description">
+							<span class="section-description__text">
+								От 300 &#8381;
+							</span>
+							<h3 class="section-description__subtitle">
+								Линейки
+							</h3>
+							<span class="section-description__additional-text">
+								Имеется вохможность заказа оптом
+							</span>
+						</div>
+					</li>
+				</a>
+				<a class="consumables-product-link" href="">
+					<li class="consumables-product-item">
+						<div class="consumables-product-item__section-image">
+							<picture>
+								<source media="(min-width: 1440px)" width="250" height="250" type="image/png" srcset="image/consumables/plenka.png">
+								<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/consumables/plenka.png">
+								<img class="logo__img" src="image/consumables/plenka.png" width="160" height="180" alt="Логотип Врамке">
+							</picture>
+						</div>
+						<div class="consumables-product-item__section-description">
+							<span class="section-description__text">
+								От 300 &#8381;
+							</span>
+							<h3 class="section-description__subtitle">
+								Лазерная гравировка
+							</h3>
+							<span class="section-description__additional-text">
+								Имеется вохможность заказа оптом
+							</span>
+						</div>
+					</li>
+				</a>
+				<a class="consumables-product-link" href="">
+					<li class="consumables-product-item">
+						<div class="consumables-product-item__section-image">
+							<picture>
+								<source media="(min-width: 1440px)" width="250" height="250" type="image/png" srcset="image/consumables/plenka.png">
+								<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/consumables/plenka.png">
+								<img class="logo__img" src="image/consumables/plenka.png" width="160" height="180" alt="Логотип Врамке">
+							</picture>
+						</div>
+						<div class="consumables-product-item__section-description">
+							<span class="section-description__text">
+								От 300 &#8381;
+							</span>
+							<h3 class="section-description__subtitle">
+								Печать на ручках
+							</h3>
+							<span class="section-description__additional-text">
+								Имеется вохможность заказа оптом
+							</span>
+						</div>
+					</li>
+				</a>
+			</ul>
+		</section>
+	</main>
+	<footer class="main-footer">
+		<section class="main-footer__footer-block">
+
+			<div class="main-footer__social-block">
+				<div class="social-media">
+					<a href="">
+						<img src="image/whatsapp.png" alt="whatsapp" width="40" height="40">
+					</a>
+					<a href="">
+						<img src="image/inst.png" alt="whatsapp" width="40" height="40">
+					</a>
+					<a href="">
+						<img src="image/tg.png" alt="whatsapp" width="40" height="40">
+					</a>
+				</div>
+				<div class="social-block-text">
+					<ul class="social-block-text-list">
+						<a class="social-block-text-link" href="">
+							<li class="social-text">
+								О нас
+							</li>
+						</a>
+						<a class="social-block-text-link" href="">
+							<li class="social-text">
+								Работать у нас
+							</li>
+						</a>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</footer>
+</body>
+
+</html>
